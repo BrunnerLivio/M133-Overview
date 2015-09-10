@@ -30,7 +30,7 @@
                     <li v-repeat="files" class="file" data-fullPath="{{fullPath}}" v-on="click: openFile">{{name}}</li>
                   </ul>
                 </li>  
-              </ul>
+              </ul> 
             </div><!-- left -->
             <div class="right" id="fileOverview">
               <h2 class="selectedFileName"><span>{{selectedFile.name}}</span> 
