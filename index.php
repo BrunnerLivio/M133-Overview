@@ -31,7 +31,6 @@
                   </ul>
                 </li>  
               </ul> 
-              
             </div><!-- left -->
             <div class="right" id="fileOverview">
               <h2 class="selectedFileName"><span>{{selectedFile.name}}</span> 
