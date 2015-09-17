@@ -32,6 +32,9 @@ $(function(){
 				$('pre code').each(function(i, block) {
 					hljs.highlightBlock(block);
 				});
+				$("#fileViewer form").submit(function(e){
+					e.preventDefault();
+				});
 			},
 			openFolder(e){
 				$(e.target).closest(".folder").toggleClass("open");
