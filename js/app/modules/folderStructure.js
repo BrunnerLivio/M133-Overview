@@ -16,7 +16,7 @@ $(function(){
 			fetchData: function (){
 				var self = this;
 				$.ajax({
-					url:"/php/service/getFolderStructure.php",
+					url:"php/service/getFolderStructure.php",
 					type:"GET",
 					success:function(data){
 						self.folders = JSON.parse(data);
@@ -27,14 +27,16 @@ $(function(){
 			openFile(e){
 				e.preventDefault();
 				this.selectedFile = e.targetVM;
-				$("#fileViewer").load(encodeURI(this.selectedFile.fullPath));
-				$("#codeViewer pre code").text(this.selectedFile.sourceCode);
-				$('pre code').each(function(i, block) {
-					hljs.highlightBlock(block);
+				$("#fileViewer").load(encodeURI(this.selectedFile.fullPath), function(){
+					$("#codeViewer pre code").text(this.selectedFile.sourceCode);
+					$('pre code').each(function(i, block) {
+						hljs.highlightBlock(block);
+					});
+					$("#fileViewer form").submit(function(e){
+						e.preventDefault();
+					});
 				});
-				$("#fileViewer form").submit(function(e){
-					e.preventDefault();
-				});
+				
 			},
 			openFolder(e){
 				$(e.target).closest(".folder").toggleClass("open");
