@@ -16,6 +16,7 @@ if(isset($_POST["name"])){
 	$name = $_POST["name"];
 	$email = $_POST["email"];
 	$message = $_POST["message"];
+	
 	date_default_timezone_set("Europe/Berlin");
 	$timestamp = time();
 	$datum = date("y-m-d",$timestamp);
