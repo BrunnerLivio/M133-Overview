@@ -3,6 +3,10 @@ body{
 	margin:0px;
 	color:#2b2b2b;
 	font-family: 'Open Sans', "Arial", sans-serif;
+<<<<<<< HEAD
+	height:100%;
+=======
+>>>>>>> f7c3a91dd3c4a21c0322cc84eaa441b518dfffbf
 }
 h2{
 	padding-left:5px;
@@ -15,7 +19,10 @@ h1{
 	margin-top:10px;
 }
 main{
+<<<<<<< HEAD
+=======
 	
+>>>>>>> f7c3a91dd3c4a21c0322cc84eaa441b518dfffbf
 	width:100%;
 	&::after{
 		background-color:#2471A3;
@@ -65,7 +72,13 @@ main{
 		padding-left:0px;
 		margin-top:0px;
 	}
+<<<<<<< HEAD
+	li{
+		list-style: none;
+	}
+=======
 	
+>>>>>>> f7c3a91dd3c4a21c0322cc84eaa441b518dfffbf
 	.folder{
 		list-style:none;
 		font-size:1.3vw;
@@ -89,6 +102,22 @@ main{
 		&.open > ul{
 			max-height: 500px;
 		}
+<<<<<<< HEAD
+		
+	}
+	ul#child{
+		max-height: 0;
+		margin-top:5px;
+		margin-bottom:5px;
+		padding-left:20px;
+		color:#EBEBEB;
+		list-style:none;
+		overflow:hidden;
+		transition:max-height 0.2s ease-in-out;
+	}
+	.file{
+		cursor:pointer;
+=======
 		ul{
 			max-height: 0;
 			margin-top:5px;
@@ -102,6 +131,7 @@ main{
 		.file{
 			cursor:pointer;
 		}
+>>>>>>> f7c3a91dd3c4a21c0322cc84eaa441b518dfffbf
 	}
 }
 

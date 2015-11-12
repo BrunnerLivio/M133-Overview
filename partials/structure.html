@@ -1,0 +1,13 @@
+<ul>
+	<li v-repeat="files">
+		<div class="folder" v-if="type=='folder'">
+			<div class="name" v-on="click: openFolder" >
+				{{path}}
+			</div>
+		</div>  
+		<div class="file" data-fullPath="{{fullPath}}" v-on="click: openFile" v-if="type=='file'">
+			{{name}}
+		</div>
+
+	</li>
+</ul> 

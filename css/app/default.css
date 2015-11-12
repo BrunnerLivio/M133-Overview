@@ -3,6 +3,10 @@ body {
   margin: 0px;
   color: #2b2b2b;
   font-family: 'Open Sans', "Arial", sans-serif;
+<<<<<<< HEAD
+  height: 100%;
+=======
+>>>>>>> f7c3a91dd3c4a21c0322cc84eaa441b518dfffbf
 }
 
 h2 {
@@ -77,6 +81,13 @@ main::after {
   margin-top: 0px;
 }
 
+<<<<<<< HEAD
+#folderStructure li {
+  list-style: none;
+}
+
+=======
+>>>>>>> f7c3a91dd3c4a21c0322cc84eaa441b518dfffbf
 #folderStructure .folder {
   list-style: none;
   font-size: 1.3vw;
@@ -105,7 +116,11 @@ main::after {
   max-height: 500px;
 }
 
+<<<<<<< HEAD
+#folderStructure ul#child {
+=======
 #folderStructure .folder ul {
+>>>>>>> f7c3a91dd3c4a21c0322cc84eaa441b518dfffbf
   max-height: 0;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -116,7 +131,11 @@ main::after {
   transition: max-height 0.2s ease-in-out;
 }
 
+<<<<<<< HEAD
+#folderStructure .file {
+=======
 #folderStructure .folder .file {
+>>>>>>> f7c3a91dd3c4a21c0322cc84eaa441b518dfffbf
   cursor: pointer;
 }
 

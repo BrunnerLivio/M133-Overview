@@ -21,6 +21,12 @@
                     <i class="fa fa-refresh" id="refreshFolderStructure" ></i>
                 </a>
               </h2>
+<<<<<<< HEAD
+              <div id="folderList">
+                <partial name="structure"></partial>
+              </div>
+              
+=======
               <ul id="folderList">
                 <li class="folder" v-repeat="folders" >
                   <div class="name" v-on="click: openFolder">
@@ -31,6 +37,7 @@
                   </ul>
                 </li>  
               </ul> 
+>>>>>>> f7c3a91dd3c4a21c0322cc84eaa441b518dfffbf
             </div><!-- left -->
             <div class="right" id="fileOverview">
               <h2 class="selectedFileName"><span>{{selectedFile.name}}</span> 

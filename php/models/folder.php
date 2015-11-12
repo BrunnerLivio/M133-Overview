@@ -5,6 +5,10 @@ class Folder{
 	public $files = [];
 	public $path;
 	public $fullPath;
+<<<<<<< HEAD
+	public $type = "folder";
+=======
+>>>>>>> f7c3a91dd3c4a21c0322cc84eaa441b518dfffbf
 	function __construct($fullPath, $path){
 		$this->fullPath = $fullPath;
 		$this->path = $path;
